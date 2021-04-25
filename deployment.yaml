@@ -15,12 +15,14 @@ spec:
         app: webapp     
     spec:
       containers:
-        - name: python
-          image: python:3.7
+        - name: webapp
+          imagePullPolicy: Never
+          image: test
           ports:
-          - containerPort: 80        
+          - containerPort: 5000
           volumeMounts:
             - name: webapp-config
+              mountPath:/app/webapp/html
       volumes:
         - name: webapp-config
           configMap:
