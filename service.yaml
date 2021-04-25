@@ -12,7 +12,7 @@ spec:
   type: LoadBalancer
   volumeMounts:
     - name: myvol
-      mountPath: /app/mytask/html
+      mountPath: /app/webapp/html
 volumes:
    - name: myvol
      configMap:
