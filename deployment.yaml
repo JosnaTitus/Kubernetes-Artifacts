@@ -21,9 +21,9 @@ spec:
           ports:
           - containerPort: 5000
           volumeMounts:
-            - name: webapp-config
+            - name: myvol
               mountPath:/app/webapp/html
       volumes:
-        - name: webapp-config
+        - name: myvol
           configMap:
-            name: webapp
+            name: myconfigmap
