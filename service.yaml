@@ -10,3 +10,10 @@ spec:
     port: 6000
     targetPort: 5000
   type: LoadBalancer
+  volumeMounts:
+    - name: myvol
+      mountPath: /app/mytask/html
+volumes:
+   - name: myvol
+     configMap:
+       name: myconfigmap
