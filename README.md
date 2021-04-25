@@ -14,3 +14,14 @@ Expected Output:
        4.City
        5. Region
        6. Country
+Steps to solve this Assignment: -
+1. Pull the latest code i.e; Open terminal & type following command: -
+
+          git clone https://github.com/JosnaTitus/DockerFile-MySQL.git
+          
+2. Go to the cloned folder: -
+  
+          cd  Kubernetes-Artifacts
+      
+
+
