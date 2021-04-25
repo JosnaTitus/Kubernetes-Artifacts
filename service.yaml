@@ -1,19 +1,13 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: webapp-service
+  name: app-service
 spec:
   selector:
-    app: webapp
+    app: app
   ports:
   - protocol: TCP
     port: 6000
     targetPort: 5000
   type: LoadBalancer
-  volumeMounts:
-    - name: myvol
-      mountPath: /app/webapp/html
-volumes:
-   - name: myvol
-     configMap:
-       name: myconfigmap
+
