@@ -1,0 +1,27 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: webapp-deployment
+  labels:
+    app: webapp     
+spec:
+  selector:
+    matchLabels:
+      app: webapp
+  replicas: 1 
+  template: 
+    metadata:
+      labels:
+        app: webapp     
+    spec:
+      containers:
+        - name: python
+          image: python:3.7
+          ports:
+          - containerPort: 80        
+          volumeMounts:
+            - name: webapp-config
+      volumes:
+        - name: webapp-config
+          configMap:
+            name: webapp
