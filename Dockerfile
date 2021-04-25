@@ -1,3 +1,6 @@
-FROM test
-ADD webapp.py /docker-entrypoint-initdb.d
-EXPOSE 8080 
+FROM python3.7
+RUN mkdir /app
+WORKDIR /app/
+ADD . /app/
+RUN pip install -r requirement.txt
+CMD ["python", "/app/app.py"]
