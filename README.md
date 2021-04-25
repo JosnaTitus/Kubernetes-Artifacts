@@ -1,4 +1,4 @@
-                                            Kubernetes Artifacts in Action
+                          Kubernetes Artifacts in Action
 
 Problem Statement: 
 
