@@ -39,7 +39,7 @@ Steps to solve this Assignment: -
 
           python3 webapp.py
           
-7. Build image using command: -
+7. Run the API in the postman by hitting: -
 
           Open browser and write https://127.0.0.1:5080/pucsd
           
