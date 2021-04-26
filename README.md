@@ -41,7 +41,7 @@ Steps to solve this Assignment: -
           
 7. Run the API in the postman by hitting: -
 
-          Open browser and write https://127.0.0.1:5080/pucsd
+          Open browser and write https://127.0.0.1:5000/pucsd
           
  
 
