@@ -10,4 +10,4 @@ def myapp():
     return {"Time":datetime.now(), "IP Address":socket.gethostbyname(hostname), "Hostname":hostname, "City":"Pune", "Country":"India", "Region":"Asia"}
 
 if __name__ == '__main__':
-    app.run(port=5080)
+    app.run(port=5000)
