@@ -22,6 +22,27 @@ Steps to solve this Assignment: -
 2. Go to the cloned folder: -
   
           cd  Kubernetes-Artifacts
+          
+3. Build Docker-Image using command: -
+
+          docker build . -t test
+
+4. To build development file in kubectl use command: -
       
+          kubectl apply -f .
+          
+5. To check if our files are running use command: -
+
+          kubectl get svc
+          
+6. To run our Python program: -
+
+          python3 webapp.py
+          
+7. Build image using command: -
+
+          Open browser and write https://127.0.0.1:5080/pucsd
+          
+ 
 
 
