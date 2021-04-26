@@ -1,26 +1,13 @@
-import time
+from datetime import datetime
 import socket
 
 from flask import Flask
 app = Flask(__name__)
-    
-@app.route('/pucsd/')
-def Time():
-    return time.today()
 
-@app.route('/')
-def Hostname():
-    return socket.hostname()
-   
 @app.route('/pucsd/')
-def City():
-    return "Pune"
-    
-@app.route('/pucsd/')
-def Country():
-    return "India"
-    
-@app.route('/pucsd/')
-def Region():
-    return "Asia"
-     
+def myapp():
+    hostname = socket.gethostname()
+    return {"Time":datetime.now(), "IP Address":socket.gethostbyname(hostname), "Hostname":hostname, "City":"Pune", "Country":"India", "Region":"Asia"}
+
+if __name__ == '__main__':
+    app.run(port=5080)
