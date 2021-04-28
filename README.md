@@ -11,7 +11,7 @@ Expected Output:
        1. Current Time in IST
        2. IP Address 
        3. Hostname
-       4.City
+       4. City
        5. Region
        6. Country
 Steps to solve this Assignment: -
